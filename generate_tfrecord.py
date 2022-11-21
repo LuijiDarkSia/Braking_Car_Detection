@@ -23,15 +23,12 @@ flags.DEFINE_string('image_dir', '', 'Path to images')
 FLAGS = flags.FLAGS
 
 
+# Add your labels here:
 def class_text_to_int(row_label):
     if row_label == 'car':
         return 1
-    elif row_label == 'van':
+    elif row_label == 'breaking_car':
         return 2
-    elif row_label == 'bus':
-        return 3
-    elif row_label == 'truck':
-        return 4
     else:
         return None
 
